@@ -1,0 +1,4 @@
+demo:
+  service:
+    config: test abc
+    enabled: true
