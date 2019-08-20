@@ -12,6 +12,7 @@
     <modules>
         <module>demo-spring-boot-starter</module>
         <module>test-springboot</module>
+        <module>demo-security-browser</module>
     </modules>
 
     <parent>
