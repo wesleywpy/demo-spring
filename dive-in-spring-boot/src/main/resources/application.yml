@@ -1,0 +1,6 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        # 开放所有监控的 Web Endpoints
+        include: "*"
