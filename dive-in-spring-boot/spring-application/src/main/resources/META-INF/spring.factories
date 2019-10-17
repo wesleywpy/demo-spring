@@ -1,0 +1,9 @@
+# 应用上下文初始器
+org.springframework.context.ApplicationContextInitializer=\
+com.wesley.springboot.context.AfterHelloWorldApplicationContextInitializer,\
+com.wesley.springboot.context.HelloWorldApplicationContextInitializer
+
+# 应用事件监听器
+org.springframework.context.ApplicationListener=\
+com.wesley.springboot.listener.AfterHelloWorldApplicationListener,\
+com.wesley.springboot.listener.HelloWorldApplicationListener
