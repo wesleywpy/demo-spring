@@ -6,7 +6,8 @@ com.wesley.springboot.context.HelloWorldApplicationContextInitializer
 # 应用事件监听器
 org.springframework.context.ApplicationListener=\
 com.wesley.springboot.listener.AfterHelloWorldApplicationListener,\
-com.wesley.springboot.listener.HelloWorldApplicationListener
+com.wesley.springboot.listener.HelloWorldApplicationListener,\
+com.wesley.springboot.listener.BeforeConfigFileApplicationListener
 
 # Spring应用 运行监听器
 org.springframework.boot.SpringApplicationRunListener=\
