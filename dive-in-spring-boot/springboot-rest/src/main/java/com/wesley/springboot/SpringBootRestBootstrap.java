@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Created by Yani on 2019/10/25
  */
-@SpringBootApplication(scanBasePackages = {"com.wesley.springboot.controller"})
+@SpringBootApplication(scanBasePackages = {"com.wesley.springboot.controller", "com.wesley.springboot.config"})
 public class SpringBootRestBootstrap {
 
     public static void main(String[] args) {
