@@ -6,6 +6,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 
 import java.util.Properties;
 import java.util.Random;
@@ -35,6 +36,15 @@ public class UserController {
      */
     @PostMapping(value = "/users/properties", consumes = "text/properties;charset=UTF-8")
     public Properties addProperties(@RequestBody Properties properties) {
+        properties.setProperty("sign", "wesley");
+        return properties;
+    }
+
+    /**
+     * {@link Properties} 类型 {@link HandlerMethodArgumentResolver} 测试
+     */
+    @PostMapping(value = "/users/props")
+    public Properties addPros(Properties properties) {
         properties.setProperty("sign", "wesley");
         return properties;
     }
