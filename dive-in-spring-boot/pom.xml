@@ -16,6 +16,7 @@
         <module>autoconfigure</module>
         <module>spring-application</module>
         <module>springboot-rest</module>
+        <module>spring-servlet</module>
     </modules>
 
 
