@@ -1,0 +1,6 @@
+name:
+  wesley
+
+context:
+  initializer:
+    classes: com.wesley.springboot.initializer.ThirdInitializer

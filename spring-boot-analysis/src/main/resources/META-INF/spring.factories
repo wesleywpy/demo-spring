@@ -1,0 +1,2 @@
+# 注册 应用上下文初始化器
+org.springframework.context.ApplicationContextInitializer=com.wesley.springboot.initializer.FirstInitializer
