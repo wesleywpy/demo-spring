@@ -1,6 +1,7 @@
 name:
   wesley
 
+# 通过配置添加的 应用上下文初始化器 原理是 会被 DelegatingApplicationContextInitializer 发现
 context:
   initializer:
     classes: com.wesley.springboot.initializer.ThirdInitializer
