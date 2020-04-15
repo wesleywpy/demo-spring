@@ -1,5 +1,8 @@
 package com.wesley.springboot.event;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,9 +13,11 @@ import java.util.List;
  *
  * @author Created by Yani on 2020/04/10
  */
+@Component
 public abstract class AbstractEventMulticaster implements EventMulticaster{
 
-    private List<WeatherListener> listenerList = new ArrayList<>();
+    @Autowired
+    private List<WeatherListener> listenerList;
 
     @Override
     public void multicastEvent(WeatherEvent event) {
