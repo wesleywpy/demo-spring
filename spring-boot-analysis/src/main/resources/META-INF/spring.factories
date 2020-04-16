@@ -2,4 +2,6 @@
 org.springframework.context.ApplicationContextInitializer=com.wesley.springboot.initializer.FirstInitializer
 
 # ×¢²á Ó¦ÓÃ¼àÌýÆ÷
-org.springframework.context.ApplicationListener=com.wesley.springboot.listener.FirstListener
+org.springframework.context.ApplicationListener=\
+com.wesley.springboot.listener.FirstListener,\
+com.wesley.springboot.listener.FourthListener
