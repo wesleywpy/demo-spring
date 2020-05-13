@@ -38,19 +38,19 @@ public class Philosopher implements BeanPostProcessor , InitializingBean {
      */
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        logger.info(" ------> postProcessBeforeInitialization : " + beanName);
-        if (beanName.equals("philosopher")) {
-            logger.info(" \t ------> Philosopher BeanPostProcessor Before");
-        }
+//        logger.info(" ------> postProcessBeforeInitialization : " + beanName);
+//        if (beanName.equals("philosopher")) {
+//            logger.info(" \t ------> Philosopher BeanPostProcessor Before");
+//        }
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        logger.info(" ------> postProcessAfterInitialization : " + beanName);
-        if (beanName.equals("philosopher")) {
-            logger.info(" \t ------> Philosopher BeanPostProcessor After");
-        }
+//        logger.info(" ------> postProcessAfterInitialization : " + beanName);
+//        if (beanName.equals("philosopher")) {
+//            logger.info(" \t ------> Philosopher BeanPostProcessor After");
+//        }
         return bean;
     }
 
