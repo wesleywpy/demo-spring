@@ -18,4 +18,5 @@ public class SecondListener implements ApplicationListener<ApplicationStartedEve
     public void onApplicationEvent(ApplicationStartedEvent event) {
         System.out.println(" -----> Run SecondListener ..... 监听事件: ApplicationStartedEvent");
     }
+
 }

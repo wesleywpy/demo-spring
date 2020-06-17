@@ -14,5 +14,7 @@ context:
     classes: com.wesley.springboot.initializer.ThirdInitializer
 
 wesley:
+  starter:
+    enabled: true
   academy:
     addr: athens_addr_15

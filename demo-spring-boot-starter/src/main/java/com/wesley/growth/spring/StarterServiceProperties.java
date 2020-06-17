@@ -10,7 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  *
  * @author Created by Yani on 2019/07/24
  */
-@ConfigurationProperties("demo.service")
+@ConfigurationProperties("wesley.starter")
 public class StarterServiceProperties {
     private String config;
 

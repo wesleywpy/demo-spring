@@ -24,4 +24,6 @@ public class TestService implements ApplicationContextAware {
     public String testInitializer() {
         return applicationContext.getEnvironment().getProperty("ThirdInitializer.key");
     }
+
+
 }

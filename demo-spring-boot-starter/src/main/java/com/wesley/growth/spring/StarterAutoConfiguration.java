@@ -17,9 +17,10 @@ import org.springframework.context.annotation.Configuration;
  * @author Created by Yani on 2019/07/24
  */
 @Configuration
-@ConditionalOnClass(StarterService.class)
 @EnableConfigurationProperties(StarterServiceProperties.class)
-public class StarterAutoConfigure {
+@ConditionalOnClass(StarterService.class)
+@ConditionalOnProperty(value = "wesley.starter.enabled", havingValue = "true", matchIfMissing = false)
+public class StarterAutoConfiguration {
 
     /**
      * 注解@ConditionalOnClass，当classpath下发现该类的情况下进行自动配置
@@ -36,7 +37,6 @@ public class StarterAutoConfigure {
      * 注解@ConditionalOnResource:类路径下是否有指定的资源
      */
 
-
     @Autowired
     StarterServiceProperties properties;
 
@@ -45,7 +45,6 @@ public class StarterAutoConfigure {
      */
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(value = "demo.service.enabled", havingValue = "true", matchIfMissing = false)
     public StarterService starterService() {
         return new StarterService(properties.getConfig());
     }
