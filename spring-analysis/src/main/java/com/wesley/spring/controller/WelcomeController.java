@@ -1,5 +1,6 @@
 package com.wesley.spring.controller;
 
+import com.wesley.spring.service.DemoService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
@@ -11,7 +12,13 @@ public class WelcomeController implements ApplicationContextAware, BeanNameAware
 	private String myName;
 	private ApplicationContext myContainer;
 
-	public void handleRequest(){
+	private final DemoService demoService;
+
+    public WelcomeController(DemoService demoService) {
+        this.demoService = demoService;
+    }
+
+    public void handleRequest(){
 		System.out.println("\r\n -----> 我是谁：" + myName);
 		String[] beanDefinitionNames = myContainer.getBeanDefinitionNames();
 		for(String beanDefinitionName : beanDefinitionNames) {
