@@ -43,6 +43,8 @@ public class MazdaLotteryUtil {
         keyIds.add("13f38b9965b375797ddaf9535b9d676a"); // 2020年11月4日10:01:44
         keyIds.add("b054d6fce89edd7828ee62567e41ae24"); // 2020年11月4日10:16:44
         keyIds.add("4dd76191c5d89fe614affd5fba494da1"); // 2020年11月4日10:20:44
+        keyIds.add("3a20d17453df1e07f4a7fe56d132633d"); // 2020年11月4日11:50:44
+        keyIds.add("34fdce4df1cd820b182678ac9799e011"); // 2020年11月4日15:36:44
     }
 
     public void drawLottery() {
@@ -62,9 +64,9 @@ public class MazdaLotteryUtil {
                     ResponseEntity<String> response = restTemplate.exchange(request, String.class);
                     String msg = " ====> " + format.format(new Date()) + " : " + response.getBody();
                     System.out.println(msg);
+                    TimeUnit.SECONDS.sleep(1);
                 }
                 count++;
-                TimeUnit.SECONDS.sleep(3);
             }
         } catch (Exception e) {
             e.printStackTrace();
