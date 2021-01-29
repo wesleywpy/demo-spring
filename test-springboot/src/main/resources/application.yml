@@ -1,8 +1,7 @@
-demo:
-  service:
-    config: test abc
-    enabled: true
-
 logging:
   level:
     ROOT: INFO
+
+
+server:
+  port: 8080
