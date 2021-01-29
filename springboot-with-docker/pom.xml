@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>test-springboot</artifactId>
+    <artifactId>springboot-with-docker</artifactId>
 
     <dependencies>
 
